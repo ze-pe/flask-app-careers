@@ -22,7 +22,11 @@
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet inventore vel voluptates sunt quidem cum a obcaecati, odit, explicabo corporis possimus enim velit tempore, doloremque impedit unde distinctio. Nam, quos?
     </p>
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-    <p>TODO - Show jobs here</p>
+    <p>
+      {% for job in jobs %}
+        {% include 'jobs.html' %}
+      {% endfor %}
+    </p>
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
       <p class="mt-4">Copyright 2023</p>
